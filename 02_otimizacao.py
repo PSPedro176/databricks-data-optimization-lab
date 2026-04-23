@@ -34,7 +34,7 @@
 # MAGIC 10. Takeaways
 # MAGIC 11. Cleanup (opcional)
 # MAGIC
-# MAGIC > Os testes de sanidade saíram deste notebook. Rode **`03_testes_sanidade`**
+# MAGIC > Os testes de sanidade estão em **`03_testes_sanidade`**
 # MAGIC > depois desta execução para validar o estado final ponta-a-ponta.
 
 # COMMAND ----------
@@ -131,6 +131,9 @@ GROUP BY customer_id
 """
 
 bench = {}
+
+# COMMAND ----------
+
 bench["1_baseline"] = benchmark("baseline", target_sql.format(table="sales_baseline"))
 
 # COMMAND ----------
